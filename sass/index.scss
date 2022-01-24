@@ -1,0 +1,44 @@
+@import "mixin.scss";
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Serif', serif;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+.logo{
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+header{
+    nav{
+        @include flex();
+        justify-content: space-between;
+        padding: 1% 6%;
+        background-color:#6c8fae;
+
+        
+        
+        ul{
+            @include flex();
+
+            li{
+                &:not(:last-child){
+                    margin-right: 50px;
+                }
+            }
+        }
+    }
+}
