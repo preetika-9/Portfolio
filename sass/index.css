@@ -48,9 +48,11 @@ header nav ul li:not(:last-child) {
 
 .home {
   padding: 10% 0%;
+  font-size: 50px;
+  font-weight: 600;
 }
 
-main nav {
+main .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,18 +62,12 @@ main nav {
   padding: 2% 10%;
 }
 
-main nav img {
+main .section1 img {
   height: auto;
   width: 500px;
 }
 
-main nav p {
-  padding: 2% 0%;
-  font-size: 50px;
-  font-weight: 600;
-}
-
-main nav button {
+main .section1 button {
   width: 200px;
   height: 50px;
   text-align: left;
@@ -85,11 +81,27 @@ main nav button {
   margin-top: 50px;
 }
 
-main nav button:hover {
+main .section1 button:hover {
   background-color: #4b6479;
 }
 
-main nav button i {
+main .section1 button i {
   padding-left: 10%;
+}
+
+.about {
+  background-color: #6c8fae;
+  padding: 5%;
+}
+
+.about h1 {
+  font-size: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about .text {
+  padding-top: 2%;
 }
 /*# sourceMappingURL=index.css.map */

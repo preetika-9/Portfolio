@@ -29,7 +29,7 @@ header{
         @include flex();
         @include space();
         padding: 1% 6%;
-        background-color:#6c8fae;
+        @include background-color;
         font-size: 20px;
 
         
@@ -49,10 +49,13 @@ header{
 
 .home{
     padding: 10% 0%;
+    font-size: 50px;
+    font-weight: 600;
+
 }
 
 main{
-    nav{
+    .section1{
         @include flex();
         @include space();
         padding: 2% 10%;
@@ -60,13 +63,7 @@ main{
         img{
             height: auto;
             width: 500px;
-        }
-
-        p{
-            padding: 2% 0%;
-            font-size: 50px;
-            font-weight: 600;
-        }
+        }      
 
         button{
             width: 200px;
@@ -78,7 +75,7 @@ main{
             border-radius: 10px;
             font-size: 20px;
             padding-left: 5%;
-            background-color: #6c8fae;
+            @include background-color;
             margin-top: 50px;
             &:hover{
                 background-color: #4b6479;
@@ -89,3 +86,17 @@ main{
         }
     }
 }
+
+.about{
+        @include background-color;
+        padding:5%;
+        
+        h1{
+            font-size: 50px;
+            align-items: center;
+        }
+
+        .text{
+            padding-top: 2%;
+        }
+    }
