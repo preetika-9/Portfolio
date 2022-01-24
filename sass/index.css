@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Ubuntu+Condensed&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -17,9 +18,10 @@ a {
 }
 
 .logo {
-  color: #ffffff;
-  font-size: 25px;
-  font-weight: 600;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Moo Lah Lah', cursive;
 }
 
 header nav {
@@ -31,6 +33,7 @@ header nav {
           justify-content: space-between;
   padding: 1% 6%;
   background-color: #6c8fae;
+  font-size: 20px;
 }
 
 header nav ul {
@@ -41,5 +44,52 @@ header nav ul {
 
 header nav ul li:not(:last-child) {
   margin-right: 50px;
+}
+
+.home {
+  padding: 10% 0%;
+}
+
+main nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2% 10%;
+}
+
+main nav img {
+  height: auto;
+  width: 500px;
+}
+
+main nav p {
+  padding: 2% 0%;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+main nav button {
+  width: 200px;
+  height: 50px;
+  text-align: left;
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  padding-left: 5%;
+  background-color: #6c8fae;
+  margin-top: 50px;
+}
+
+main nav button:hover {
+  background-color: #4b6479;
+}
+
+main nav button i {
+  padding-left: 10%;
 }
 /*# sourceMappingURL=index.css.map */
