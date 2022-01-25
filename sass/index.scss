@@ -139,11 +139,30 @@ main{
         @include background-color();
     }
 
+    & .oracle{
+        width: 60%;
+        @include background-color();
+    }
+
+    & .mysql{
+        width: 50%;
+        @include background-color();
+    }
+    & .dotnet{
+        width: 40%;
+        @include background-color();
+    }
+    & .java{
+        width: 60%;
+        @include background-color();
+    }
+
 }
 
 .contact{
     @include background-color();
     @include padding();
+    padding: 2% 15%;
 
     h1{
         @include font-size();
@@ -187,5 +206,17 @@ button{
 .footer{
     @include background-color;
     padding:2%;
+    text-align: center;
+    
+    ul{
+        padding: 0 ;
+        
+        
+        li{
+            display: inline-block;
+            margin: 0 2%;
+            font-size: 2rem;
+        }
+    }
 }
 

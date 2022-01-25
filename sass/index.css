@@ -144,9 +144,30 @@ main .section1 button i {
   background-color: #6c8fae;
 }
 
+.myskills .oracle {
+  width: 60%;
+  background-color: #6c8fae;
+}
+
+.myskills .mysql {
+  width: 50%;
+  background-color: #6c8fae;
+}
+
+.myskills .dotnet {
+  width: 40%;
+  background-color: #6c8fae;
+}
+
+.myskills .java {
+  width: 60%;
+  background-color: #6c8fae;
+}
+
 .contact {
   background-color: #6c8fae;
   padding: 5%;
+  padding: 2% 15%;
 }
 
 .contact h1 {
@@ -191,5 +212,16 @@ button:hover {
 .footer {
   background-color: #6c8fae;
   padding: 2%;
+  text-align: center;
+}
+
+.footer ul {
+  padding: 0;
+}
+
+.footer ul li {
+  display: inline-block;
+  margin: 0 2%;
+  font-size: 2rem;
 }
 /*# sourceMappingURL=index.css.map */
