@@ -9,3 +9,16 @@
 @mixin background_color{
     background-color:#6c8fae;
 }
+
+@mixin font_size{
+    font-size: 2rem;
+}
+
+@mixin h1{
+    text-align: center;
+        padding-bottom: 2%;
+}
+
+@mixin padding {
+    padding: 5%;
+}

@@ -19,7 +19,7 @@ a{
 
 .logo{
     color: #000000;
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: 400;
     font-family: 'Moo Lah Lah', cursive;
 }
@@ -29,7 +29,7 @@ header{
         @include flex();
         @include space();
         padding: 1% 6%;
-        @include background-color;
+        @include background-color();
         font-size: 20px;
 
         
@@ -89,14 +89,103 @@ main{
 
 .about{
         @include background-color;
-        padding:5%;
+        @include padding();
+        text-align: center;
         
         h1{
-            font-size: 50px;
-            align-items: center;
+           @include font-size();
+            
         }
 
         .text{
             padding-top: 2%;
         }
+}
+
+.myskills{
+    @include padding();
+    
+     h1{
+        @include font-size();
+        @include h1();
     }
+
+    & .skills-wrapper{
+        padding-left: 30%;
+    }
+    & .container{
+        width: 50%;
+        background-color: #bfbfbf;
+        border-radius: 20px;
+        
+    }
+    & .skills{
+        text-align: right;
+        padding: 1% 0;
+        color: white;
+    }
+    & .html{
+        width: 90%;
+        @include background-color();
+    }
+
+    & .css{
+        width: 60%;
+        @include background-color();
+    }
+
+    & .js{
+        width: 40%;
+        @include background-color();
+    }
+
+}
+
+.contact{
+    @include background-color();
+    @include padding();
+
+    h1{
+        @include font-size();
+        @include h1();
+    }
+
+    
+    
+    i{
+        @include font-size();
+        padding-right: 2%;
+    }
+
+    .form{
+        padding-top: 2%;
+    }     
+}
+
+input, textarea{
+    width: 75%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+button{
+    width: 150px;
+    height: 45px;
+    background-color: white;
+    border: #4b6479;
+    border-radius: 5px;
+    overflow: hidden;
+    &:hover{
+        background-color:#c1c1c1 ;
+    }
+}
+
+.footer{
+    @include background-color;
+    padding:2%;
+}
+

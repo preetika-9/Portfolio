@@ -19,7 +19,7 @@ a {
 
 .logo {
   color: #000000;
-  font-size: 30px;
+  font-size: 2rem;
   font-weight: 400;
   font-family: 'Moo Lah Lah', cursive;
 }
@@ -92,16 +92,104 @@ main .section1 button i {
 .about {
   background-color: #6c8fae;
   padding: 5%;
+  text-align: center;
 }
 
 .about h1 {
-  font-size: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-size: 2rem;
 }
 
 .about .text {
   padding-top: 2%;
+}
+
+.myskills {
+  padding: 5%;
+}
+
+.myskills h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.myskills .skills-wrapper {
+  padding-left: 30%;
+}
+
+.myskills .container {
+  width: 50%;
+  background-color: #bfbfbf;
+  border-radius: 20px;
+}
+
+.myskills .skills {
+  text-align: right;
+  padding: 1% 0;
+  color: white;
+}
+
+.myskills .html {
+  width: 90%;
+  background-color: #6c8fae;
+}
+
+.myskills .css {
+  width: 60%;
+  background-color: #6c8fae;
+}
+
+.myskills .js {
+  width: 40%;
+  background-color: #6c8fae;
+}
+
+.contact {
+  background-color: #6c8fae;
+  padding: 5%;
+}
+
+.contact h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+.contact i {
+  font-size: 2rem;
+  padding-right: 2%;
+}
+
+.contact .form {
+  padding-top: 2%;
+}
+
+input, textarea {
+  width: 75%;
+  padding: 12px;
+  border: 1px solid white;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+button {
+  width: 150px;
+  height: 45px;
+  background-color: white;
+  border: #4b6479;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+button:hover {
+  background-color: #c1c1c1;
+}
+
+.footer {
+  background-color: #6c8fae;
+  padding: 2%;
 }
 /*# sourceMappingURL=index.css.map */
