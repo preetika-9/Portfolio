@@ -1,11 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu+Condensed&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Ubuntu+Condensed&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Ubuntu+Condensed&display=swap');*/
+@font-face {
+  font-family: Serif;
+  src: url("../font/Serif-Regular.ttf");
+  font-family: Logo;
+  src: url("../font/MooLahLah-Regular.ttf");
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: 'PT Serif', serif;
+  font-family: Serif;
 }
 
 ul {
@@ -21,7 +28,7 @@ a {
   color: #000000;
   font-size: 2rem;
   font-weight: 400;
-  font-family: 'Moo Lah Lah', cursive;
+  font-family: Logo;
 }
 
 header nav {
@@ -101,6 +108,7 @@ main .section1 button i {
 
 .about .text {
   padding-top: 2%;
+  font-size: 1.5rem;
 }
 
 .myskills {
