@@ -41,6 +41,7 @@ header nav {
   padding: 1% 6%;
   background-color: #6c8fae;
   font-size: 20px;
+  font-weight: bold;
 }
 
 header nav ul {
@@ -49,8 +50,17 @@ header nav ul {
   display: flex;
 }
 
+header nav ul li {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 header nav ul li:not(:last-child) {
   margin-right: 50px;
+}
+
+header nav ul li:hover {
+  color: #c1c1c1;
 }
 
 .home {
@@ -184,6 +194,15 @@ main .section1 button i {
   padding-bottom: 2%;
 }
 
+.contact li i {
+  -webkit-transition: 0.3sec;
+  transition: 0.3sec;
+}
+
+.contact li i:hover {
+  color: #c1c1c1;
+}
+
 .contact i {
   font-size: 2rem;
   padding-right: 2%;
@@ -211,6 +230,9 @@ button {
   border: #4b6479;
   border-radius: 5px;
   overflow: hidden;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 2%;
 }
 
 button:hover {
@@ -231,5 +253,11 @@ button:hover {
   display: inline-block;
   margin: 0 2%;
   font-size: 2rem;
+  -webkit-transition: 0.3sec;
+  transition: 0.3sec;
+}
+
+.footer ul li:hover {
+  color: #c1c1c1;
 }
 /*# sourceMappingURL=index.css.map */

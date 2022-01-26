@@ -41,15 +41,22 @@ header{
         padding: 1% 6%;
         @include background-color();
         font-size: 20px;
-
+        font-weight: bold;
         
         
         ul{
             @include flex();
 
             li{
+                transition: 0.3s;
                 &:not(:last-child){
                     margin-right: 50px;
+                }
+                
+
+                &:hover{
+                    @include color();
+                    
                 }
             }
         }
@@ -180,6 +187,16 @@ main{
         @include h1();
     }
 
+    li{
+        i{
+            transition: 0.3sec;
+
+                &:hover{
+                    @include color();
+                }
+        }
+    }
+
     
     
     i{
@@ -209,6 +226,9 @@ button{
     border: #4b6479;
     border-radius: 5px;
     overflow: hidden;
+    font-size: 1rem;
+    font-weight: bold;
+    padding-bottom: 2%;
     &:hover{
         background-color:#c1c1c1 ;
     }
@@ -227,6 +247,11 @@ button{
             display: inline-block;
             margin: 0 2%;
             font-size: 2rem;
+            transition: 0.3sec;
+
+            &:hover{
+                @include color();
+            }
         }
     }
 }
