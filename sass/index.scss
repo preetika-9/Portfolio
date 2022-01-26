@@ -40,7 +40,7 @@ header{
         @include space();
         padding: 1% 6%;
         @include background-color();
-        font-size: 20px;
+        font-size: 2.5vh;
         font-weight: bold;
         
         
@@ -66,7 +66,7 @@ header{
 
 .home{
     padding: 10% 0%;
-    font-size: 50px;
+    font-size: 5vh;
     font-weight: 600;
 
 }
@@ -79,12 +79,12 @@ main{
 
         img{
             height: auto;
-            width: 500px;
+            max-width: 100%;
         }      
 
         button{
-            width: 200px;
-            height: 50px;
+            width: 50%;
+            height: 60px;
             text-align: left;
             position: relative;
             border: none;
@@ -110,13 +110,13 @@ main{
         text-align: center;
         
         h1{
-           @include font-size();
+          font-size: 4vh;
             
         }
 
         .text{
             padding-top: 2%;
-            font-size: 1.5rem;
+            font-size: 3vh;
         }
 }
 
@@ -124,7 +124,7 @@ main{
     @include padding();
     
      h1{
-        @include font-size();
+        font-size: 4vh;
         @include h1();
     }
 
@@ -183,7 +183,7 @@ main{
     padding: 2% 15%;
 
     h1{
-        @include font-size();
+        font-size: 4vh;
         @include h1();
     }
 
@@ -200,7 +200,7 @@ main{
     
     
     i{
-        @include font-size();
+        font-size: 4vh;
         padding-right: 2%;
     }
 
@@ -220,13 +220,13 @@ input, textarea{
 }
 
 button{
-    width: 150px;
+    width: 15%;
     height: 45px;
     background-color: white;
     border: #4b6479;
     border-radius: 5px;
     overflow: hidden;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: bold;
     padding-bottom: 2%;
     &:hover{
@@ -256,3 +256,12 @@ button{
     }
 }
 
+
+
+
+
+@media (max-width: 600px) {
+    .navlink & ul, li, a{   
+      flex-direction: column;
+    }
+  }

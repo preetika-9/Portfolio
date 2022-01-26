@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./sass/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,21 +13,21 @@
 </head>
 <body>
 <header>
-    <nav>
+    <nav >
         <a href="#" class="logo">Pritika.</a>
         <div class="navlink">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">My Skills</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#myskills">My Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 </header>
 
 <main>
-    <section class="section1"> 
+    <section class="section1" id="home"> 
        
         <div class="home">
             <div><p>Hi,</p></div>
@@ -38,7 +40,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
             <h1>ABOUT</h1>
             <div class="text"> 
                 <p>Hi, I'm Pritika. I'm a Frontend Developer.<br>
@@ -53,7 +55,7 @@
         
     </section>
 
-    <section class="myskills">
+    <section class="myskills" id="myskills"> 
        <h1>MY SKILLS</h1>
        <div class="skills-wrapper"> 
             <p>HTML</p>
@@ -93,7 +95,7 @@
         </div>
     </section>
 
-    <section class="contact" >
+    <section class="contact" id="contact">
         <h1>CONTACT </h1>
         <ul>
             <li><i class="ion-ios-location"></i>Mulpani, Kathmandu</li>
@@ -104,9 +106,9 @@
         <div class="form"> 
             <p>Let's get in touch. Send me a message:</p>
 
-            <form>
-                <input type="text" id="name" placeholder="Name"></br>
-                <input type="email" id="mail" placeholder="Email"></br>
+            <form name="myForm" onsubmit="return validateForm()">
+                <input type="text" id="name" placeholder="Name" name="name"></br>
+                <input type="email" id="mail" placeholder="Email" name="email"></br>
                 <textarea id="subject" name="subject" placeholder="Subject" ></textarea><br>
                 
                 <button type="submit"> <i class="ion-paper-airplane"></i> Send Message </button>
@@ -133,6 +135,6 @@
         </ul> 
     </div> 
 </footer>
-    
+
 </body>
 </html>

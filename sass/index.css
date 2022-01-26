@@ -40,7 +40,7 @@ header nav {
           justify-content: space-between;
   padding: 1% 6%;
   background-color: #6c8fae;
-  font-size: 20px;
+  font-size: 2.5vh;
   font-weight: bold;
 }
 
@@ -65,7 +65,7 @@ header nav ul li:hover {
 
 .home {
   padding: 10% 0%;
-  font-size: 50px;
+  font-size: 5vh;
   font-weight: 600;
 }
 
@@ -81,12 +81,12 @@ main .section1 {
 
 main .section1 img {
   height: auto;
-  width: 500px;
+  max-width: 100%;
 }
 
 main .section1 button {
-  width: 200px;
-  height: 50px;
+  width: 50%;
+  height: 60px;
   text-align: left;
   position: relative;
   border: none;
@@ -113,12 +113,12 @@ main .section1 button i {
 }
 
 .about h1 {
-  font-size: 2rem;
+  font-size: 4vh;
 }
 
 .about .text {
   padding-top: 2%;
-  font-size: 1.5rem;
+  font-size: 3vh;
 }
 
 .myskills {
@@ -126,7 +126,7 @@ main .section1 button i {
 }
 
 .myskills h1 {
-  font-size: 2rem;
+  font-size: 4vh;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -189,7 +189,7 @@ main .section1 button i {
 }
 
 .contact h1 {
-  font-size: 2rem;
+  font-size: 4vh;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -204,7 +204,7 @@ main .section1 button i {
 }
 
 .contact i {
-  font-size: 2rem;
+  font-size: 4vh;
   padding-right: 2%;
 }
 
@@ -224,13 +224,13 @@ input, textarea {
 }
 
 button {
-  width: 150px;
+  width: 15%;
   height: 45px;
   background-color: white;
   border: #4b6479;
   border-radius: 5px;
   overflow: hidden;
-  font-size: 1rem;
+  font-size: 20px;
   font-weight: bold;
   padding-bottom: 2%;
 }
@@ -259,5 +259,14 @@ button:hover {
 
 .footer ul li:hover {
   color: #c1c1c1;
+}
+
+@media (max-width: 600px) {
+  .navlink ul, li, a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=index.css.map */
