@@ -40,7 +40,7 @@ header nav {
           justify-content: space-between;
   padding: 1% 6%;
   background-color: #6c8fae;
-  font-size: 2.5vh;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -82,6 +82,8 @@ main .section1 {
 main .section1 img {
   height: auto;
   max-width: 100%;
+  -o-object-fit: fit;
+     object-fit: fit;
 }
 
 main .section1 button {
@@ -226,17 +228,25 @@ input, textarea {
 button {
   width: 15%;
   height: 45px;
+  text-align: left;
   background-color: white;
+  position: relative;
   border: #4b6479;
+  outline: none;
   border-radius: 5px;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 1rem;
   font-weight: bold;
-  padding-bottom: 2%;
+  -webkit-transition: 0.2sec ease-in;
+  transition: 0.2sec ease-in;
 }
 
 button:hover {
   background-color: #c1c1c1;
+}
+
+button i {
+  padding-left: 10%;
 }
 
 .footer {

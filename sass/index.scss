@@ -40,7 +40,7 @@ header{
         @include space();
         padding: 1% 6%;
         @include background-color();
-        font-size: 2.5vh;
+        font-size: 20px;
         font-weight: bold;
         
         
@@ -80,6 +80,7 @@ main{
         img{
             height: auto;
             max-width: 100%;
+            object-fit: fit;
         }      
 
         button{
@@ -222,15 +223,22 @@ input, textarea{
 button{
     width: 15%;
     height: 45px;
+    text-align: left;
     background-color: white;
+    position: relative;
     border: #4b6479;
+    outline: none;
     border-radius: 5px;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 1rem;
     font-weight: bold;
-    padding-bottom: 2%;
+    transition: 0.2sec ease-in;
     &:hover{
         background-color:#c1c1c1 ;
+    }
+
+    i{
+        padding-left: 10%;
     }
 }
 
