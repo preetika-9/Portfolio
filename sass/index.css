@@ -65,7 +65,7 @@ header nav ul li:hover {
 
 .home {
   padding: 10% 0%;
-  font-size: 5vh;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -87,14 +87,14 @@ main .section1 img {
 }
 
 main .section1 button {
-  width: 50%;
+  width: 200px;
   height: 60px;
   text-align: left;
   position: relative;
   border: none;
   outline: none;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1rem;
   padding-left: 5%;
   background-color: #6c8fae;
   margin-top: 50px;
@@ -105,7 +105,7 @@ main .section1 button:hover {
 }
 
 main .section1 button i {
-  padding-left: 10%;
+  padding-left: 5%;
 }
 
 .about {
@@ -115,12 +115,12 @@ main .section1 button i {
 }
 
 .about h1 {
-  font-size: 4vh;
+  font-size: 3rem;
 }
 
 .about .text {
   padding-top: 2%;
-  font-size: 3vh;
+  font-size: 2rem;
 }
 
 .myskills {
@@ -128,7 +128,7 @@ main .section1 button i {
 }
 
 .myskills h1 {
-  font-size: 4vh;
+  font-size: 3rem;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -191,7 +191,7 @@ main .section1 button i {
 }
 
 .contact h1 {
-  font-size: 4vh;
+  font-size: 3rem;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -206,7 +206,7 @@ main .section1 button i {
 }
 
 .contact i {
-  font-size: 4vh;
+  font-size: 3rem;
   padding-right: 2%;
 }
 
@@ -227,7 +227,7 @@ input, textarea {
 
 button {
   width: 15%;
-  height: 45px;
+  height: 6vh;
   text-align: left;
   background-color: white;
   position: relative;
@@ -246,7 +246,7 @@ button:hover {
 }
 
 button i {
-  padding-left: 10%;
+  padding-left: 5%;
 }
 
 .footer {
@@ -273,6 +273,15 @@ button i {
 
 @media (max-width: 600px) {
   .navlink ul, li, a {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .home, .img {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

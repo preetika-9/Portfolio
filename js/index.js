@@ -17,3 +17,15 @@ function validateForm(){
         return false;
     }
 }
+
+
+var options = {
+    strings: ["Developer.", "Blogger.", "Designer.", "Freelancer."],
+    typeSpeed: 40,
+    backSpeed: 60,
+    loop: true
+};
+
+var typed = new Typed('.typing', options);
+
+

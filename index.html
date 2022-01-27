@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="./sass/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+    
 <header>
     <nav >
         <a href="#" class="logo">Pritika.</a>
@@ -30,12 +32,16 @@
     <section class="section1" id="home"> 
        
         <div class="home">
-            <div><p>Hi,</p></div>
-            <div><p>I'm Pritika</p></div>
-            <div><p class="text2">Frontend Developer.</p></div>
-            <button>Download CV <i class="fa fa-download"></i></button>
+            <div class="text1"> 
+                <div><p>Hi,</p></div>
+                <div><p>I'm Pritika</p></div>
+                <div><p>And I'm  <span class="typing"></span></p></div>
+            </div>
+            <div>
+                <button>Download CV <i class="fa fa-download"></i></button>
+            </div>
         </div>
-        <div>
+        <div class="img">
             <img src="./img/image.png">
         </div>
     </section>
@@ -111,7 +117,7 @@
                 <input type="email" id="mail" placeholder="Email" name="email"></br>
                 <textarea id="subject" name="subject" placeholder="Subject" ></textarea><br>
                 
-                <button type="submit"> <i class="ion-paper-airplane"></i> Send Message </button>
+                <button type="submit"> <i class="ion-paper-airplane"></i>Send Message </i></button>
             </form>
         </div>
         
@@ -136,5 +142,6 @@
     </div> 
 </footer>
     <script type="text/javascript"  src="./js/index.js"></script>
+    
 </body>
 </html>
