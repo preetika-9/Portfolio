@@ -201,7 +201,7 @@ main{
     
     
     i{
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding-right: 2%;
     }
 
@@ -238,7 +238,7 @@ button{
     }
 
     i{
-        padding-left: 5%;
+        padding-left: 10%;
     }
 }
 
@@ -276,7 +276,13 @@ button{
 
 
 @media (max-width: 600px){
-    .home, .img{
+    .section1{
         flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
     }
 }
