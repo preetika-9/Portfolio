@@ -42,6 +42,8 @@ header{
         @include background-color();
         font-size: 20px;
         font-weight: bold;
+        width: 100%;
+        position: fixed;
         
         
         ul{
@@ -71,6 +73,10 @@ header{
 
 }
 
+.text1{
+    width: 50vh;
+}
+
 main{
     .section1{
         @include flex();
@@ -78,21 +84,19 @@ main{
         padding: 2% 10%;
 
         img{
-            height: auto;
-            max-width: 100%;
-            object-fit: fit;
+            
         }      
 
         button{
-            width: 200px;
-            height: 5vh;
+            width: 150px;
+            height: 6vh;
             text-align: left;
             position: relative;
             border: none;
             outline: none;
             border-radius: 10px;
             font-size: 1rem;
-            padding-left: 5%;
+            padding-left: 3%;
             @include background-color;
             margin-top: 50px;
             &:hover{
@@ -222,7 +226,7 @@ input, textarea{
 
 button{
     width: 150px;
-    height: 5vh;
+    height: 6vh;
     text-align: left;
     background-color: white;
     position: relative;

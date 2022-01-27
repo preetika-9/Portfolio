@@ -1,3 +1,5 @@
+
+
 function validateForm(){
     let x = document.forms["myForm"]["name"].value;
     if(x == ""  || x == null){
