@@ -45,12 +45,18 @@ a{
     outline: none;
     color: #fdfbfb;
     cursor: pointer;
-    padding: 1%;
+    padding: 3px;
     border-radius: 10px;
-    width: 45px;
-    height: 6vh;
+    width: 35px;
+    height: 5vh;
+    text-align: center;
     background-color: #4b6479;
+
+    &:hover{
+        background-color: #2d3c49;
+    }
 }
+
 
 
 header{
